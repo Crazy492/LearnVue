@@ -15,7 +15,6 @@
   </div>
 
   <script>
-    //多个input就不行了
     const RE = new RegExp(/\{\{\s*\w+\s*\}\}/g) //匹配双花括号的正则
     let flag = false;                           //判断是否是第一次添加input事件
     let el = document.querySelector('#app');    //挂载节点
@@ -38,10 +37,13 @@
       set(obj, name, value){
         obj[name] = value
         console.log(`${name} => ${value}`)
+        //数据更新并渲染
         render();
       }
     })
+    //初始化渲染
     render();
+
     function render() {
 
       Array.from(aInput).forEach(input => {
