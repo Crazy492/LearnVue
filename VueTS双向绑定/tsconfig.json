@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+   "target": "es2020",
+   "noImplicitAny": false,
+   "module": "commonjs",
+   "removeComments": false,
+   "sourceMap": true,
+   "strict": false,
+   "outDir": "js",//你要生成js的目录
+   "lib": ["es2016","dom"]
+  }
+}
